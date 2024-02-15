@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DramasubBD</title>
     <style>
-        /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,36 +16,33 @@
             padding: 20px;
             text-align: center;
         }
-        nav {
-            background-color: #444;
-            padding: 10px;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
             text-align: center;
         }
-        .category {
-            display: inline-block;
-            margin: 0 10px;
-            color: #fff;
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
             text-decoration: none;
-            font-weight: bold;
-        }
-        .drama-container {
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-        .drama {
-            width: 250px;
-            margin: 10px;
-            padding: 10px;
+            color: #333;
+            padding: 5px 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            text-align: center;
+        }
+        nav ul li a:hover {
+            background-color: #ccc;
+        }
+        .drama {
             display: inline-block;
-            vertical-align: top;
-            background-color: #f9f9f9;
+            text-align: center;
+            margin: 20px;
         }
         .drama img {
             width: 200px;
-            height: 200px;
+            height: auto;
             border-radius: 5px;
         }
     </style>
@@ -56,46 +52,47 @@
         <h1>DramasubBD</h1>
     </header>
     <nav>
-        <a href="#korean" class="category">Korean Dramas</a>
-        <a href="#chinese" class="category">Chinese Dramas</a>
-        <a href="#japanese" class="category">Japanese Dramas</a>
-        <a href="#movies" class="category">Movies</a>
+        <ul>
+            <li><a href="#korean">Korean Dramas</a></li>
+            <li><a href="#japanese">Japanese Dramas</a></li>
+            <li><a href="#chinese">Chinese Dramas</a></li>
+            <li><a href="#movies">Movies</a></li>
+        </ul>
     </nav>
-    <div class="drama-container" id="korean">
+    <div id="korean">
         <h2>Korean Dramas</h2>
-        <!-- List of Korean dramas -->
         <div class="drama">
-            <img src="korean_drama_image.jpg" alt="Korean Drama">
-            <p><a href="korean_drama_link.html">Korean Drama Name</a></p>
+            <img src="korean_drama_image.jpg" alt="My Demon">
+            <p><a href="my_demon.html">My Demon</a></p>
         </div>
-        <!-- Add more dramas as needed -->
+        <!-- Add more Korean dramas as needed -->
     </div>
-    <div class="drama-container" id="chinese">
-        <h2>Chinese Dramas</h2>
-        <!-- List of Chinese dramas -->
-        <div class="drama">
-            <img src="chinese_drama_image.jpg" alt="Chinese Drama">
-            <p><a href="chinese_drama_link.html">Chinese Drama Name</a></p>
-        </div>
-        <!-- Add more dramas as needed -->
-    </div>
-    <div class="drama-container" id="japanese">
+    <div id="japanese">
         <h2>Japanese Dramas</h2>
-        <!-- List of Japanese dramas -->
         <div class="drama">
-            <img src="japanese_drama_image.jpg" alt="Japanese Drama">
-            <p><a href="japanese_drama_link.html">Japanese Drama Name</a></p>
+            <img src="japanese_drama_image.jpg" alt="Mars: Zero no Kakumei">
+            <p><a href="mars_zero_no_kakumei.html">Mars: Zero no Kakumei</a></p>
         </div>
-        <!-- Add more dramas as needed -->
+        <!-- Add more Japanese dramas as needed -->
     </div>
-    <div class="drama-container" id="movies">
-        <h2>Movies</h2>
-        <!-- List of movies -->
+    <div id="chinese">
+        <h2>Chinese Dramas</h2>
         <div class="drama">
-            <img src="movie_image.jpg" alt="Movie">
-            <p><a href="movie_link.html">Movie Name</a></p>
+            <img src="chinese_drama_image.jpg" alt="Golden House Hidden Love">
+            <p><a href="golden_house_hidden_love.html">Golden House Hidden Love</a></p>
+        </div>
+        <!-- Add more Chinese dramas as needed -->
+    </div>
+    <div id="movies">
+        <h2>Movies</h2>
+        <div class="drama">
+            <img src="movie_image.jpg" alt="Target">
+            <p><a href="target.html">Target (Don't Buy The Seller)</a></p>
         </div>
         <!-- Add more movies as needed -->
     </div>
+    <footer>
+        <p>&copy; 2024 DramasubBD. All rights reserved.</p>
+    </footer>
 </body>
 </html>
